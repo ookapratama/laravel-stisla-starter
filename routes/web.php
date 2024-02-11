@@ -13,6 +13,17 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::redirect('/', 'dashboard/ecommerce');
+
+// Dashboard
+Route::prefix('dashboard')->group(function () {
+
+    Route::get('ecommerce', function () {
+        return view('pages.dashboard-ecommerce', ['menu' => 'dashboard']);
+    })->name('dashboard.ecommerce');
+
+    Route::get('general', function () {
+        return view('pages.dashboard-general', ['menu' => 'dashboard']);
+    })->name('dashboard.general');
+
 });
