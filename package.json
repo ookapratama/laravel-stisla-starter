@@ -1,6 +1,5 @@
 {
     "private": true,
-    "type": "module",
     "scripts": {
         "dev": "npm run development",
         "development": "mix",
@@ -35,7 +34,6 @@
         "datatables.net-select-bs4": "^1.2.7",
         "delayed-stream": "^1.0.0",
         "dropzone": "^5.5.1",
-        "esbuild": "^0.19.12",
         "flag-icon-css": "^3.2.1",
         "follow-redirects": "^1.15.5",
         "form-data": "^4.0.0",
@@ -47,6 +45,7 @@
         "jquery-sparkline": "^2.4.0",
         "jquery-ui-dist": "^1.12.1",
         "jquery.nicescroll": "^3.7.6",
+        "jqvmap": "github:10bestdesign/jqvmap",
         "mime-db": "^1.52.0",
         "mime-types": "^2.1.35",
         "moment": "^2.24.0",
