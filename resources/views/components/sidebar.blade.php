@@ -11,10 +11,13 @@
             <li class="nav-item dropdown {{ $menu == 'dashboard' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
                 <ul class="dropdown-menu">
-                    <li class="{{ Request::is('dashboard/general') ? 'active' : '' }}"><a class="nav-link" href="{{ route('dashboard.general') }}">General Dashboard</a></li>
-                    <li class="{{ Request::is('dashboard/ecommerce') ? 'active' : '' }}"><a class="nav-link" href="{{ route('dashboard.ecommerce') }}">Ecommerce Dashboard</a></li>
+                    <li class="{{ Request::is('dashboard/general') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('dashboard.general') }}">General Dashboard</a></li>
+                    <li class="{{ Request::is('dashboard/ecommerce') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('dashboard.ecommerce') }}">Ecommerce Dashboard</a></li>
                 </ul>
             </li>
+
             <li class="menu-header">Starter</li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i>
@@ -27,6 +30,7 @@
             </li>
             <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank
                         Page</span></a></li>
+
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
                     <span>Bootstrap</span></a>
@@ -53,6 +57,7 @@
                     <li><a class="nav-link" href="bootstrap-typography.html">Typography</a></li>
                 </ul>
             </li>
+
             <li class="menu-header">Stisla</li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i>
@@ -78,6 +83,7 @@
                     </li>
                 </ul>
             </li>
+
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i>
                     <span>Forms</span></a>
@@ -87,6 +93,7 @@
                     <li><a class="nav-link" href="forms-validation.html">Validation</a></li>
                 </ul>
             </li>
+
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-marker-alt"></i>
                     <span>Google Maps</span></a>
@@ -101,6 +108,7 @@
                     <li><a href="gmaps-simple.html">Simple</a></li>
                 </ul>
             </li>
+
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-plug"></i>
                     <span>Modules</span></a>
@@ -119,6 +127,7 @@
                     <li><a class="nav-link" href="modules-weather-icon.html">Weather Icon</a></li>
                 </ul>
             </li>
+
             <li class="menu-header">Pages</li>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i>
@@ -131,6 +140,7 @@
                     <li><a href="auth-reset-password.html">Reset Password</a></li>
                 </ul>
             </li>
+
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-exclamation"></i>
                     <span>Errors</span></a>
@@ -141,12 +151,13 @@
                     <li><a class="nav-link" href="errors-500.html">500</a></li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
+            
+            <li class="nav-item dropdown {{ $menu == 'features' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-bicycle"></i>
                     <span>Features</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="features-activities.html">Activities</a></li>
-                    <li><a class="nav-link" href="features-post-create.html">Post Create</a></li>
+                    <li class="{{ Request::is('feature/activities') ? 'active' : '' }}"><a class="nav-link" href="{{ route('feature.activites') }}">Activities</a></li>
+                    <li class="{{ Request::is('feature/post-create') ? 'active' : '' }}"><a class="nav-link" href="{{ route('feature.post-create') }}">Post Create</a></li>
                     <li><a class="nav-link" href="features-posts.html">Posts</a></li>
                     <li><a class="nav-link" href="features-profile.html">Profile</a></li>
                     <li><a class="nav-link" href="features-settings.html">Settings</a></li>
