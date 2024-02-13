@@ -6084,5 +6084,20 @@
     "/library/gmaps/test/spec/StyleSpec.js": "/library/gmaps/test/spec/StyleSpec.js",
     "/library/gmaps/test/style.css": "/library/gmaps/test/style.css",
     "/library/gmaps/test/template/jasmine-gmaps.html": "/library/gmaps/test/template/jasmine-gmaps.html",
-    "/library/gmaps/umd.hbs": "/library/gmaps/umd.hbs"
+    "/library/gmaps/umd.hbs": "/library/gmaps/umd.hbs",
+    "/library/sticky-kit/bower.json": "/library/sticky-kit/bower.json",
+    "/library/sticky-kit/CONTRIBUTING.md": "/library/sticky-kit/CONTRIBUTING.md",
+    "/library/sticky-kit/dist/sticky-kit.js": "/library/sticky-kit/dist/sticky-kit.js",
+    "/library/sticky-kit/dist/sticky-kit.min.js": "/library/sticky-kit/dist/sticky-kit.min.js",
+    "/library/sticky-kit/dist/Tupfile": "/library/sticky-kit/dist/Tupfile",
+    "/library/sticky-kit/Makefile": "/library/sticky-kit/Makefile",
+    "/library/sticky-kit/package.json": "/library/sticky-kit/package.json",
+    "/library/sticky-kit/README.md": "/library/sticky-kit/README.md",
+    "/library/sticky-kit/sticky-kit.coffee": "/library/sticky-kit/sticky-kit.coffee",
+    "/library/sticky-kit/sticky-kit.jquery.json": "/library/sticky-kit/sticky-kit.jquery.json",
+    "/library/sticky-kit/test/index.html": "/library/sticky-kit/test/index.html",
+    "/library/sticky-kit/test/style.css": "/library/sticky-kit/test/style.css",
+    "/library/sticky-kit/test/tile.png": "/library/sticky-kit/test/tile.png",
+    "/library/sticky-kit/test/two.html": "/library/sticky-kit/test/two.html",
+    "/library/sticky-kit/Tupfile": "/library/sticky-kit/Tupfile"
 }

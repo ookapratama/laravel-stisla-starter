@@ -59,3 +59,16 @@ Route::prefix('feature')->group(function () {
     })->name('feature.tickets');
 
 });
+
+// Layouts
+Route::prefix('layout')->group(function () {
+
+    Route::get('default', function () {
+        return view('pages.layouts.layout-default', ['menu' => 'layout']);
+    })->name('layout.default');
+
+    Route::get('transparent', function () {
+        return view('pages.layouts.layout-transparent', ['menu' => 'layout']);
+    })->name('layout.transparent');
+
+});

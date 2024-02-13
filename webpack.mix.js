@@ -36,6 +36,7 @@ let plugins = [
     "izitoast",
     "weathericons",
     "gmaps",
+    "sticky-kit",
 ];
 
 plugins.forEach((plugin) => {

@@ -17,19 +17,24 @@
     @stack('styles')
 
     <!-- Template CSS -->
-    <link rel="stylesheet" href="{{ asset('css/style.css')}}">
-    <link rel="stylesheet" href="{{ asset('css/components.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/components.css') }}">
 </head>
 
-<body>
+<body class="{{ $title == 'Layout Transparent' ? 'layout-2' : '' }}">
     <div id="app">
         <div class="main-wrapper">
 
-            {{-- Header --}}
-            @include('components.header')
+            {{-- Header and Sidebar --}}
+            @if ($title == 'Layout Transparent')
+                @include('components.transparent.header')
 
-            {{-- Sidebar --}}
-            @include('components.sidebar')
+                @include('components.transparent.sidebar')
+            @else
+                @include('components.default.header')
+
+                @include('components.default.sidebar')
+            @endif
 
             <!-- Main Content -->
             @yield('content')
@@ -50,17 +55,17 @@
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="{{ asset('js/stisla.js')}}"></script>
+    <script src="{{ asset('js/stisla.js') }}"></script>
 
     <!-- JS Libraies -->
     @stack('scripts')
-    
+
 
     <!-- Template JS File -->
-    <script src="{{ asset('js/scripts.js')}}"></script>
-    <script src="{{ asset('js/custom.js')}}"></script>
+    <script src="{{ asset('js/scripts.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
 
-    
+
 </body>
 
 </html>
