@@ -37,5 +37,25 @@ Route::prefix('feature')->group(function () {
     Route::get('post-create', function () {
         return view('pages.features.feature-post-create', ['menu' => 'features']);
     })->name('feature.post-create');
+    
+    Route::get('posts', function () {
+        return view('pages.features.feature-posts', ['menu' => 'features']);
+    })->name('feature.posts');
+    
+    Route::get('profile', function () {
+        return view('pages.features.feature-profile', ['menu' => 'features']);
+    })->name('feature.profile');
+    
+    Route::get('settings', function () {
+        return view('pages.features.feature-settings', ['menu' => 'features']);
+    })->name('feature.settings');
+
+    Route::get('setting-detail', function () {
+        return view('pages.features.feature-setting-detail', ['menu' => 'features']);
+    })->name('feature.setting-detail');
+
+    Route::get('tickets', function () {
+        return view('pages.features.feature-tickets', ['menu' => 'features']);
+    })->name('feature.tickets');
 
 });

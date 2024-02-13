@@ -151,18 +151,25 @@
                     <li><a class="nav-link" href="errors-500.html">500</a></li>
                 </ul>
             </li>
-            
+
             <li class="nav-item dropdown {{ $menu == 'features' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-bicycle"></i>
                     <span>Features</span></a>
                 <ul class="dropdown-menu">
-                    <li class="{{ Request::is('feature/activities') ? 'active' : '' }}"><a class="nav-link" href="{{ route('feature.activites') }}">Activities</a></li>
-                    <li class="{{ Request::is('feature/post-create') ? 'active' : '' }}"><a class="nav-link" href="{{ route('feature.post-create') }}">Post Create</a></li>
-                    <li><a class="nav-link" href="features-posts.html">Posts</a></li>
-                    <li><a class="nav-link" href="features-profile.html">Profile</a></li>
-                    <li><a class="nav-link" href="features-settings.html">Settings</a></li>
-                    <li><a class="nav-link" href="features-setting-detail.html">Setting Detail</a></li>
-                    <li><a class="nav-link" href="features-tickets.html">Tickets</a></li>
+                    <li class="{{ Request::is('feature/activities') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('feature.activites') }}">Activities</a></li>
+                    <li class="{{ Request::is('feature/post-create') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('feature.post-create') }}">Post Create</a></li>
+                    <li class="{{ Request::is('feature/posts') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('feature.posts') }}">Posts</a></li>
+                    <li class="{{ Request::is('feature/profile') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('feature.profile') }}">Profile</a></li>
+                    <li class="{{ Request::is('feature/settings') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('feature.settings') }}">Settings</a></li>
+                    <li class="{{ Request::is('feature/setting-detail') }}"><a class="nav-link"
+                            href="{{ route('feature.setting-detail') }}">Setting Detail</a></li>
+                    <li class="{{ Request::is('feature/tickets') }}"><a class="nav-link"
+                            href="{{ route('feature.tickets') }}">Tickets</a></li>
                 </ul>
             </li>
             <li class="nav-item dropdown">
