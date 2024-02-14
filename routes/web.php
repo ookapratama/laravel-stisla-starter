@@ -74,5 +74,10 @@ Route::prefix('layout')->group(function () {
     Route::get('top-navigation', function () {
         return view('pages.layouts.layout-top-navigation', ['menu' => 'layout']);
     })->name('layout.top-navigation');
-
+    
 });
+
+// Blank
+Route::get('blank', function () {
+    return view('pages.blank.layout-blank', ['menu' => 'blank']);
+})->name('blank');

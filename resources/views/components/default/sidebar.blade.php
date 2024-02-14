@@ -30,7 +30,7 @@
                     <li class="{{ Request::is('layout/top-navigation') ? 'active' : '' }}"><a class="nav-link" href="{{ route('layout.top-navigation') }}">Top Navigation</a></li>
                 </ul>
             </li>
-            <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Blank
+            <li class="{{ Request::is('blank') ? 'active' : '' }}"><a class="nav-link" href="{{ route('blank') }}"><i class="far fa-square"></i> <span>Blank
                         Page</span></a></li>
 
             <li class="nav-item dropdown">
