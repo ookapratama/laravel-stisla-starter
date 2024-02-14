@@ -21,15 +21,19 @@
     <link rel="stylesheet" href="{{ asset('css/components.css') }}">
 </head>
 
-<body class="{{ $title == 'Layout Transparent' ? 'layout-2' : '' }}">
+<body
+    class="{{ $title == 'Layout Transparent' ? 'layout-2' : ($title == 'Layout Top Navigation' ? 'layout-3' : '') }}">
+
     <div id="app">
-        <div class="main-wrapper">
+        <div class="main-wrapper {{ $title == 'Layout Top Navigation' ? 'container' : '' }}">
 
             {{-- Header and Sidebar --}}
             @if ($title == 'Layout Transparent')
                 @include('components.transparent.header')
 
                 @include('components.transparent.sidebar')
+            @elseif ($title == 'Layout Top Navigation')
+                @include('components.top-navigation.navbar')
             @else
                 @include('components.default.header')
 

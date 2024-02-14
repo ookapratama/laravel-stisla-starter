@@ -71,4 +71,8 @@ Route::prefix('layout')->group(function () {
         return view('pages.layouts.layout-transparent', ['menu' => 'layout']);
     })->name('layout.transparent');
 
+    Route::get('top-navigation', function () {
+        return view('pages.layouts.layout-top-navigation', ['menu' => 'layout']);
+    })->name('layout.top-navigation');
+
 });
