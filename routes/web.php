@@ -81,3 +81,20 @@ Route::prefix('layout')->group(function () {
 Route::get('blank', function () {
     return view('pages.blank.layout-blank', ['menu' => 'blank']);
 })->name('blank');
+
+// Bootstrap
+Route::prefix('bootstrap')->group(function () {
+
+    Route::get('alert', function () {
+        return view('pages.bootstrap.alert', ['menu' => 'bootstrap']);
+    })->name('bootstrap.alert');
+
+    Route::get('badge', function () {
+        return view('pages.bootstrap.badge', ['menu' => 'bootstrap']);
+    })->name('bootstrap.badge');
+
+    Route::get('breadcrumb', function () {
+        return view('pages.bootstrap.breadcrumb', ['menu' => 'bootstrap']);
+    })->name('bootstrap.breadcrumb');
+    
+});

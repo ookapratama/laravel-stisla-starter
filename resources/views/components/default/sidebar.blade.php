@@ -33,12 +33,13 @@
             <li class="{{ Request::is('blank') ? 'active' : '' }}"><a class="nav-link" href="{{ route('blank') }}"><i class="far fa-square"></i> <span>Blank
                         Page</span></a></li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $menu == 'bootstrap' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-th"></i>
                     <span>Bootstrap</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="bootstrap-alert.html">Alert</a></li>
-                    <li><a class="nav-link" href="bootstrap-badge.html">Badge</a></li>
+                    <li class="{{ Request::is('bootstrap/alert') ? 'active' : '' }}"><a class="nav-link" href="{{ route('bootstrap.alert') }}">Alert</a></li>
+
+                    <li class="{{ Request::is('bootstrap/badge') ? 'active' : '' }}"><a class="nav-link" href="{{ route('bootstrap.badge') }}">Badge</a></li>
                     <li><a class="nav-link" href="bootstrap-breadcrumb.html">Breadcrumb</a></li>
                     <li><a class="nav-link" href="bootstrap-buttons.html">Buttons</a></li>
                     <li><a class="nav-link" href="bootstrap-card.html">Card</a></li>
