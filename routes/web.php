@@ -144,5 +144,25 @@ Route::prefix('bootstrap')->group(function () {
     Route::get('pagination', function () {
         return view('pages.bootstrap.pagination', ['menu' => 'bootstrap']);
     })->name('bootstrap.pagination');
+
+    Route::get('popover', function () {
+        return view('pages.bootstrap.popover', ['menu' => 'bootstrap']);
+    })->name('bootstrap.popover');
+
+    Route::get('progress', function () {
+        return view('pages.bootstrap.progress', ['menu' => 'bootstrap']);
+    })->name('bootstrap.progress');
+
+    Route::get('table', function () {
+        return view('pages.bootstrap.table', ['menu' => 'bootstrap']);
+    })->name('bootstrap.table');
+
+    Route::get('tooltip', function () {
+        return view('pages.bootstrap.tooltip', ['menu' => 'bootstrap']);
+    })->name('bootstrap.tooltip');
+
+    Route::get('typography', function () {
+        return view('pages.bootstrap.typography', ['menu' => 'bootstrap']);
+    })->name('bootstrap.typography');
     
 });

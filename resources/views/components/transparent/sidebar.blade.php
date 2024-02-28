@@ -65,11 +65,16 @@
                             href="{{ route('bootstrap.navbar') }}">Navbar </a></li>
                     <li class="{{ Request::is('bootstrap/pagination') ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('bootstrap.pagination') }}">Pagination </a></li>
-                    <li><a class="nav-link" href="bootstrap-popover.html">Popover</a></li>
-                    <li><a class="nav-link" href="bootstrap-progress.html">Progress</a></li>
-                    <li><a class="nav-link" href="bootstrap-table.html">Table</a></li>
-                    <li><a class="nav-link" href="bootstrap-tooltip.html">Tooltip</a></li>
-                    <li><a class="nav-link" href="bootstrap-typography.html">Typography</a></li>
+                    <li class="{{ Request::is('bootstrap/popover') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.popover') }}">Popover </a></li>
+                    <li class="{{ Request::is('bootstrap/progress') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.progress') }}">Progress </a></li>
+                    <li class="{{ Request::is('bootstrap/table') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.table') }}">Table </a></li>
+                    <li class="{{ Request::is('bootstrap/tooltip') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.tooltip') }}">Tooltip </a></li>
+                    <li class="{{ Request::is('bootstrap/typography') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.typography') }}">Typography </a></li>
                 </ul>
             </li>
 
