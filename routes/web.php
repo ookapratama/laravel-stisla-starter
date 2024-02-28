@@ -96,5 +96,25 @@ Route::prefix('bootstrap')->group(function () {
     Route::get('breadcrumb', function () {
         return view('pages.bootstrap.breadcrumb', ['menu' => 'bootstrap']);
     })->name('bootstrap.breadcrumb');
+
+    Route::get('button', function () {
+        return view('pages.bootstrap.button', ['menu' => 'bootstrap']);
+    })->name('bootstrap.button');
+
+    Route::get('card', function () {
+        return view('pages.bootstrap.card', ['menu' => 'bootstrap']);
+    })->name('bootstrap.card');
+
+    Route::get('carousel', function () {
+        return view('pages.bootstrap.carousel', ['menu' => 'bootstrap']);
+    })->name('bootstrap.carousel');
+
+    Route::get('collapse', function () {
+        return view('pages.bootstrap.collapse', ['menu' => 'bootstrap']);
+    })->name('bootstrap.collapse');
+
+    Route::get('dropdown', function () {
+        return view('pages.bootstrap.dropdown', ['menu' => 'bootstrap']);
+    })->name('bootstrap.dropdown');
     
 });

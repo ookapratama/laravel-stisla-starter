@@ -39,12 +39,18 @@
                             href="{{ route('bootstrap.alert') }}">Alert</a></li>
                     <li class="{{ Request::is('bootstrap/badge') ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('bootstrap.badge') }}">Badge</a></li>
-                    <li><a class="nav-link" href="bootstrap-breadcrumb.html">Breadcrumb</a></li>
-                    <li><a class="nav-link" href="bootstrap-buttons.html">Buttons</a></li>
-                    <li><a class="nav-link" href="bootstrap-card.html">Card</a></li>
-                    <li><a class="nav-link" href="bootstrap-carousel.html">Carousel</a></li>
-                    <li><a class="nav-link" href="bootstrap-collapse.html">Collapse</a></li>
-                    <li><a class="nav-link" href="bootstrap-dropdown.html">Dropdown</a></li>
+                    <li class="{{ Request::is('bootstrap/breadcrumb') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.breadcrumb') }}">Breadcrumb</a></li>
+                    <li class="{{ Request::is('bootstrap/button') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.button') }}">Buttons</a></li>
+                    <li class="{{ Request::is('bootstrap/card') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.card') }}">Card</a></li>
+                    <li class="{{ Request::is('bootstrap/carousel') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.carousel') }}">Carousel</a></li>
+                    <li class="{{ Request::is('bootstrap/collapse') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.collapse') }}">Collapse</a></li>
+                    <li class="{{ Request::is('bootstrap/dropdown') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.dropdown') }}">Dropdown</a></li>
                     <li><a class="nav-link" href="bootstrap-form.html">Form</a></li>
                     <li><a class="nav-link" href="bootstrap-list-group.html">List Group</a></li>
                     <li><a class="nav-link" href="bootstrap-media-object.html">Media Object</a></li>
