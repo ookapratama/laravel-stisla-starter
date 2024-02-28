@@ -51,13 +51,20 @@
                             href="{{ route('bootstrap.collapse') }}">Collapse</a></li>
                     <li class="{{ Request::is('bootstrap/dropdown') ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('bootstrap.dropdown') }}">Dropdown</a></li>
-                    <li><a class="nav-link" href="bootstrap-form.html">Form</a></li>
-                    <li><a class="nav-link" href="bootstrap-list-group.html">List Group</a></li>
-                    <li><a class="nav-link" href="bootstrap-media-object.html">Media Object</a></li>
-                    <li><a class="nav-link" href="bootstrap-modal.html">Modal</a></li>
-                    <li><a class="nav-link" href="bootstrap-nav.html">Nav</a></li>
-                    <li><a class="nav-link" href="bootstrap-navbar.html">Navbar</a></li>
-                    <li><a class="nav-link" href="bootstrap-pagination.html">Pagination</a></li>
+                    <li class="{{ Request::is('bootstrap/form') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.form') }}">Form</a></li>
+                    <li class="{{ Request::is('bootstrap/list-group') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.list-group') }}">List Group</a></li>
+                    <li class="{{ Request::is('bootstrap/media-object') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.media-object') }}">Media Object</a></li>
+                    <li class="{{ Request::is('bootstrap/modal') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.modal') }}">Modal </a></li>
+                    <li class="{{ Request::is('bootstrap/nav') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.nav') }}">Nav </a></li>
+                    <li class="{{ Request::is('bootstrap/navbar') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.navbar') }}">Navbar </a></li>
+                    <li class="{{ Request::is('bootstrap/pagination') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('bootstrap.pagination') }}">Pagination </a></li>
                     <li><a class="nav-link" href="bootstrap-popover.html">Popover</a></li>
                     <li><a class="nav-link" href="bootstrap-progress.html">Progress</a></li>
                     <li><a class="nav-link" href="bootstrap-table.html">Table</a></li>

@@ -116,5 +116,33 @@ Route::prefix('bootstrap')->group(function () {
     Route::get('dropdown', function () {
         return view('pages.bootstrap.dropdown', ['menu' => 'bootstrap']);
     })->name('bootstrap.dropdown');
+
+    Route::get('form', function () {
+        return view('pages.bootstrap.form', ['menu' => 'bootstrap']);
+    })->name('bootstrap.form');
+
+    Route::get('list-group', function () {
+        return view('pages.bootstrap.list-group', ['menu' => 'bootstrap']);
+    })->name('bootstrap.list-group');
+
+    Route::get('media-object', function () {
+        return view('pages.bootstrap.media-object', ['menu' => 'bootstrap']);
+    })->name('bootstrap.media-object');
+
+    Route::get('modal', function () {
+        return view('pages.bootstrap.modal', ['menu' => 'bootstrap']);
+    })->name('bootstrap.modal');
+
+    Route::get('nav', function () {
+        return view('pages.bootstrap.nav', ['menu' => 'bootstrap']);
+    })->name('bootstrap.nav');
+
+    Route::get('navbar', function () {
+        return view('pages.bootstrap.navbar', ['menu' => 'bootstrap']);
+    })->name('bootstrap.navbar');
+
+    Route::get('pagination', function () {
+        return view('pages.bootstrap.pagination', ['menu' => 'bootstrap']);
+    })->name('bootstrap.pagination');
     
 });
