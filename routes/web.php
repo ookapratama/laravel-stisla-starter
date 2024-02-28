@@ -166,3 +166,24 @@ Route::prefix('bootstrap')->group(function () {
     })->name('bootstrap.typography');
     
 });
+
+// Components
+Route::prefix('components')->group(function () {
+
+    Route::get('article', function () {
+        return view('pages.components.article', ['menu' => 'components']);
+    })->name('components.article');
+
+    Route::get('avatar', function () {
+        return view('pages.components.avatar', ['menu' => 'components']);
+    })->name('components.avatar');
+
+    Route::get('chat-box', function () {
+        return view('pages.components.chat-box', ['menu' => 'components']);
+    })->name('components.chat-box');
+
+    Route::get('empty-state', function () {
+        return view('pages.components.empty-state', ['menu' => 'components']);
+    })->name('components.empty-state');
+    
+});

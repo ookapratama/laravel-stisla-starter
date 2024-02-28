@@ -84,16 +84,20 @@
             </li>
 
             <li class="menu-header">Stisla</li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $menu == 'components' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-th-large"></i>
                     <span>Components</span></a>
                 <ul class="dropdown-menu">
-                    <li><a class="nav-link" href="components-article.html">Article</a></li>
-                    <li><a class="nav-link beep beep-sidebar" href="components-avatar.html">Avatar</a>
+                    <li class="{{ Request::is('components/article') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('components.article') }}">Article </a></li>
+                    <li class="{{ Request::is('components/avatar') ? 'active' : '' }}"><a
+                            class="nav-link beep beep-sidebar" href="{{ route('components.avatar') }}">Avatar </a>
                     </li>
-                    <li><a class="nav-link" href="components-chat-box.html">Chat Box</a></li>
-                    <li><a class="nav-link beep beep-sidebar" href="components-empty-state.html">Empty
-                            State</a></li>
+                    <li class="{{ Request::is('components/chat-box') ? 'active' : '' }}"><a class="nav-link "
+                            href="{{ route('components.chat-box') }}">Chat Box </a></li>
+                    <li class="{{ Request::is('components/empty-state') ? 'active' : '' }}"><a
+                            class="nav-link beep beep-sidebar" href="{{ route('components.empty-state') }}">Empty State </a>
+                    </li>
                     <li><a class="nav-link" href="components-gallery.html">Gallery</a></li>
                     <li><a class="nav-link beep beep-sidebar" href="components-hero.html">Hero</a></li>
                     <li><a class="nav-link" href="components-multiple-upload.html">Multiple Upload</a>
