@@ -331,7 +331,7 @@ Route::prefix('modules')->group(function () {
 
 });
 
-// Layouts
+// Auth
 Route::prefix('auth')->group(function () {
 
     Route::get('forgot-password', function () {
@@ -353,5 +353,26 @@ Route::prefix('auth')->group(function () {
     Route::get('reset-password', function () {
         return view('pages.auth.reset-password', ['menu' => 'auth']);
     })->name('auth.reset-password');
+    
+});
+
+// Errors
+Route::prefix('error')->group(function () {
+
+    Route::get('error-503', function () {
+        return view('pages.error.error-503', ['menu' => 'error']);
+    })->name('error.error-503');
+
+    Route::get('error-403', function () {
+        return view('pages.error.error-403', ['menu' => 'error']);
+    })->name('error.error-403');
+
+    Route::get('error-404', function () {
+        return view('pages.error.error-404', ['menu' => 'error']);
+    })->name('error.error-404');
+
+    Route::get('error-500', function () {
+        return view('pages.error.error-500', ['menu' => 'error']);
+    })->name('error.error-500');
     
 });
