@@ -277,3 +277,56 @@ Route::prefix('gmaps')->group(function () {
     })->name('gmaps.simple');
 
 });
+
+// Google Maps
+Route::prefix('modules')->group(function () {
+
+    Route::get('calendar', function () {
+        return view('pages.modules.calendar', ['menu' => 'modules']);
+    })->name('modules.calendar');
+
+    Route::get('chart-js', function () {
+        return view('pages.modules.chart-js', ['menu' => 'modules']);
+    })->name('modules.chart-js');
+
+    Route::get('datatables', function () {
+        return view('pages.modules.datatables', ['menu' => 'modules']);
+    })->name('modules.datatables');
+
+    Route::get('flag', function () {
+        return view('pages.modules.flag', ['menu' => 'modules']);
+    })->name('modules.flag');
+
+    Route::get('font-awesome', function () {
+        return view('pages.modules.font-awesome', ['menu' => 'modules']);
+    })->name('modules.font-awesome');
+
+    Route::get('ion-icons', function () {
+        return view('pages.modules.ion-icons', ['menu' => 'modules']);
+    })->name('modules.ion-icons');
+
+    Route::get('owl-carousel', function () {
+        return view('pages.modules.owl-carousel', ['menu' => 'modules']);
+    })->name('modules.owl-carousel');
+
+    Route::get('sparkline', function () {
+        return view('pages.modules.sparkline', ['menu' => 'modules']);
+    })->name('modules.sparkline');
+
+    Route::get('sweet-alert', function () {
+        return view('pages.modules.sweet-alert', ['menu' => 'modules']);
+    })->name('modules.sweet-alert');
+
+    Route::get('toastr', function () {
+        return view('pages.modules.toastr', ['menu' => 'modules']);
+    })->name('modules.toastr');
+
+    Route::get('vector-map', function () {
+        return view('pages.modules.vector-map', ['menu' => 'modules']);
+    })->name('modules.vector-map');
+
+    Route::get('weather-icon', function () {
+        return view('pages.modules.weather-icon', ['menu' => 'modules']);
+    })->name('modules.weather-icon');
+
+});
