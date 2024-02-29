@@ -28,7 +28,7 @@
   •
   <a href="https://getstisla.com/blog">Blog</a>
   •
-  <a href="https://github.com/edikurniawan-dev/laravel-stisla/issues">Issue</a>
+  <a href="https://github.com/ookapratama/laravel-stisla-starter/issues">Issue</a>
 </p>
 
 <br>
