@@ -220,15 +220,25 @@
             </li>
 
             <li class="menu-header">Pages</li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $menu == 'auth' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="far fa-user"></i>
                     <span>Auth</span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="auth-forgot-password.html">Forgot Password</a></li>
-                    <li><a href="auth-login.html">Login</a></li>
-                    <li><a class="beep beep-sidebar" href="auth-login-2.html">Login 2</a></li>
-                    <li><a href="auth-register.html">Register</a></li>
-                    <li><a href="auth-reset-password.html">Reset Password</a></li>
+                    <li class="{{ Request::is('auth/forgot-password') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('auth.forgot-password') }}">Forgot Password</a>
+                    </li>
+                    <li class="{{ Request::is('auth/login') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('auth.login') }}">Login</a>
+                    </li>
+                    <li class="{{ Request::is('auth/login2') ? 'active' : '' }}"><a
+                            class="nav-link beep beep-sidebar" href="{{ route('auth.login2') }}">Login 2</a>
+                    </li>
+                    <li class="{{ Request::is('auth/register') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('auth.register') }}">Register</a>
+                    </li>
+                    <li class="{{ Request::is('auth/reset-password') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('auth.reset-password') }}">Reset Password</a>
+                    </li>
                 </ul>
             </li>
 

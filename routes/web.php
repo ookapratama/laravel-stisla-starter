@@ -330,3 +330,28 @@ Route::prefix('modules')->group(function () {
     })->name('modules.weather-icon');
 
 });
+
+// Layouts
+Route::prefix('auth')->group(function () {
+
+    Route::get('forgot-password', function () {
+        return view('pages.auth.forgot-password', ['menu' => 'auth']);
+    })->name('auth.forgot-password');
+
+    Route::get('login', function () {
+        return view('pages.auth.login', ['menu' => 'auth']);
+    })->name('auth.login');
+
+    Route::get('login2', function () {
+        return view('pages.auth.login2', ['menu' => 'auth']);
+    })->name('auth.login2');
+
+    Route::get('register', function () {
+        return view('pages.auth.register', ['menu' => 'auth']);
+    })->name('auth.register');
+
+    Route::get('reset-password', function () {
+        return view('pages.auth.reset-password', ['menu' => 'auth']);
+    })->name('auth.reset-password');
+    
+});
