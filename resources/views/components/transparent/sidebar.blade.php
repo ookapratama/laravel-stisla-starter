@@ -139,18 +139,34 @@
                 </ul>
             </li>
 
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $menu == 'gmaps' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-map-marker-alt"></i>
                     <span>Google Maps</span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="gmaps-advanced-route.html">Advanced Route</a></li>
-                    <li><a href="gmaps-draggable-marker.html">Draggable Marker</a></li>
-                    <li><a href="gmaps-geocoding.html">Geocoding</a></li>
-                    <li><a href="gmaps-geolocation.html">Geolocation</a></li>
-                    <li><a href="gmaps-marker.html">Marker</a></li>
-                    <li><a href="gmaps-multiple-marker.html">Multiple Marker</a></li>
-                    <li><a href="gmaps-route.html">Route</a></li>
-                    <li><a href="gmaps-simple.html">Simple</a></li>
+                    <li class="{{ Request::is('gmaps/advanced-route') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('gmaps.advanced-route') }}">Advanced Route</a>
+                    </li>
+                    <li class="{{ Request::is('gmaps/draggable-marker') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('gmaps.draggable-marker') }}">Draggable Marker</a>
+                    </li>
+                    <li class="{{ Request::is('gmaps/geocoding') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('gmaps.geocoding') }}">Geocoding</a>
+                    </li>
+                    <li class="{{ Request::is('gmaps/geolocation') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('gmaps.geolocation') }}">Geolocation</a>
+                    </li>
+                    <li class="{{ Request::is('gmaps/marker') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('gmaps.marker') }}">Marker</a>
+                    </li>
+                    <li class="{{ Request::is('gmaps/multiple-marker') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('gmaps.multiple-marker') }}">Multiple Marker</a>
+                    </li>
+                    <li class="{{ Request::is('gmaps/route') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('gmaps.route') }}">Route</a>
+                    </li>
+                    <li class="{{ Request::is('gmaps/simple') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('gmaps.simple') }}">Simple</a>
+                    </li>
                 </ul>
             </li>
 

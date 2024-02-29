@@ -240,3 +240,40 @@ Route::prefix('forms')->group(function () {
     })->name('forms.validation');
     
 });
+
+// Google Maps
+Route::prefix('gmaps')->group(function () {
+
+    Route::get('advanced-route', function () {
+        return view('pages.gmaps.advanced-route', ['menu' => 'gmaps']);
+    })->name('gmaps.advanced-route');
+
+    Route::get('draggable-marker', function () {
+        return view('pages.gmaps.draggable-marker', ['menu' => 'gmaps']);
+    })->name('gmaps.draggable-marker');
+
+    Route::get('geocoding', function () {
+        return view('pages.gmaps.geocoding', ['menu' => 'gmaps']);
+    })->name('gmaps.geocoding');
+
+    Route::get('geolocation', function () {
+        return view('pages.gmaps.geolocation', ['menu' => 'gmaps']);
+    })->name('gmaps.geolocation');
+
+    Route::get('marker', function () {
+        return view('pages.gmaps.marker', ['menu' => 'gmaps']);
+    })->name('gmaps.marker');
+
+    Route::get('multiple-marker', function () {
+        return view('pages.gmaps.multiple-marker', ['menu' => 'gmaps']);
+    })->name('gmaps.multiple-marker');
+
+    Route::get('route', function () {
+        return view('pages.gmaps.route', ['menu' => 'gmaps']);
+    })->name('gmaps.route');
+
+    Route::get('simple', function () {
+        return view('pages.gmaps.simple', ['menu' => 'gmaps']);
+    })->name('gmaps.simple');
+
+});
