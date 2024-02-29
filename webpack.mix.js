@@ -37,6 +37,8 @@ let plugins = [
     "weathericons",
     "gmaps",
     "sticky-kit",
+    "datatables.net-select-bs4",
+    "datatables.net-bs4",
 ];
 
 plugins.forEach((plugin) => {
