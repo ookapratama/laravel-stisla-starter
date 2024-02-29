@@ -223,3 +223,20 @@ Route::prefix('components')->group(function () {
     })->name('components.wizard');
     
 });
+
+// Forms
+Route::prefix('forms')->group(function () {
+
+    Route::get('advanced-form', function () {
+        return view('pages.forms.advanced-form', ['menu' => 'forms']);
+    })->name('forms.advanced-form');
+
+    Route::get('editor', function () {
+        return view('pages.forms.editor', ['menu' => 'forms']);
+    })->name('forms.editor');
+
+    Route::get('validation', function () {
+        return view('pages.forms.validation', ['menu' => 'forms']);
+    })->name('forms.validation');
+    
+});
