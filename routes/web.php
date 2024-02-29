@@ -185,5 +185,41 @@ Route::prefix('components')->group(function () {
     Route::get('empty-state', function () {
         return view('pages.components.empty-state', ['menu' => 'components']);
     })->name('components.empty-state');
+
+    Route::get('gallery', function () {
+        return view('pages.components.gallery', ['menu' => 'components']);
+    })->name('components.gallery');
+
+    Route::get('hero', function () {
+        return view('pages.components.hero', ['menu' => 'components']);
+    })->name('components.hero');
+
+    Route::get('multiple-upload', function () {
+        return view('pages.components.multiple-upload', ['menu' => 'components']);
+    })->name('components.multiple-upload');
+
+    Route::get('pricing', function () {
+        return view('pages.components.pricing', ['menu' => 'components']);
+    })->name('components.pricing');
+
+    Route::get('statistic', function () {
+        return view('pages.components.statistic', ['menu' => 'components']);
+    })->name('components.statistic');
+
+    Route::get('tab', function () {
+        return view('pages.components.tab', ['menu' => 'components']);
+    })->name('components.tab');
+
+    Route::get('table', function () {
+        return view('pages.components.table', ['menu' => 'components']);
+    })->name('components.table');
+
+    Route::get('user', function () {
+        return view('pages.components.user', ['menu' => 'components']);
+    })->name('components.user');
+
+    Route::get('wizard', function () {
+        return view('pages.components.wizard', ['menu' => 'components']);
+    })->name('components.wizard');
     
 });

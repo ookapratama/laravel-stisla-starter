@@ -96,19 +96,35 @@
                     <li class="{{ Request::is('components/chat-box') ? 'active' : '' }}"><a class="nav-link "
                             href="{{ route('components.chat-box') }}">Chat Box </a></li>
                     <li class="{{ Request::is('components/empty-state') ? 'active' : '' }}"><a
-                            class="nav-link beep beep-sidebar" href="{{ route('components.empty-state') }}">Empty State </a>
+                            class="nav-link beep beep-sidebar" href="{{ route('components.empty-state') }}">Empty
+                            State </a>
                     </li>
-                    <li><a class="nav-link" href="components-gallery.html">Gallery</a></li>
-                    <li><a class="nav-link beep beep-sidebar" href="components-hero.html">Hero</a></li>
-                    <li><a class="nav-link" href="components-multiple-upload.html">Multiple Upload</a>
+                    <li class="{{ Request::is('components/gallery') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('components.gallery') }}">Gallery</a>
                     </li>
-                    <li><a class="nav-link beep beep-sidebar" href="components-pricing.html">Pricing</a>
+                    <li class="{{ Request::is('components/hero') ? 'active' : '' }}"><a
+                            class="nav-link beep beep-sidebar" href="{{ route('components.hero') }}">Hero</a>
                     </li>
-                    <li><a class="nav-link" href="components-statistic.html">Statistic</a></li>
-                    <li><a class="nav-link" href="components-tab.html">Tab</a></li>
-                    <li><a class="nav-link" href="components-table.html">Table</a></li>
-                    <li><a class="nav-link" href="components-user.html">User</a></li>
-                    <li><a class="nav-link beep beep-sidebar" href="components-wizard.html">Wizard</a>
+                    <li class="{{ Request::is('components/multiple-upload') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('components.multiple-upload') }}">Multiple Upload</a>
+                    </li>
+                    <li class="{{ Request::is('components/pricing') ? 'active' : '' }}"><a
+                            class="nav-link beep beep-sidebar" href="{{ route('components.pricing') }}">Pricing</a>
+                    </li>
+                    <li class="{{ Request::is('components/statistic') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('components.statistic') }}">Statistic</a>
+                    </li>
+                    <li class="{{ Request::is('components/tab') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('components.tab') }}">Tab</a>
+                    </li>
+                    <li class="{{ Request::is('components/table') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('components.table') }}">Table</a>
+                    </li>
+                    <li class="{{ Request::is('components/user') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('components.user') }}">User</a>
+                    </li>
+                    <li class="{{ Request::is('components/wizard') ? 'active' : '' }}"><a
+                            class="nav-link beep beep-sidebar" href="{{ route('components.wizard') }}">Wizard</a>
                     </li>
                 </ul>
             </li>
