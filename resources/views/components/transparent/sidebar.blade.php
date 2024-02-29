@@ -127,8 +127,8 @@
                 <a href="#" class="nav-link has-dropdown"><i class="far fa-file-alt"></i>
                     <span>Forms</span></a>
                 <ul class="dropdown-menu">
-                    <li class="{{ Request::is('components/advanced-form') ? 'active' : '' }}"><a class="nav-link"
-                            href="{{ route('components.advanced-form') }}">Advanced Form</a>
+                    <li class="{{ Request::is('forms/advanced-form') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('forms.advanced-form') }}">Advanced Form</a>
                     </li>
                     <li class="{{ Request::is('forms/editor') ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('forms.editor') }}">Editor</a>
@@ -269,23 +269,28 @@
                             href="{{ route('feature.profile') }}">Profile</a></li>
                     <li class="{{ Request::is('feature/settings') ? 'active' : '' }}"><a class="nav-link"
                             href="{{ route('feature.settings') }}">Settings</a></li>
-                    <li class="{{ Request::is('feature/setting-detail') }}"><a class="nav-link"
-                            href="{{ route('feature.setting-detail') }}">Setting Detail</a></li>
-                    <li class="{{ Request::is('feature/tickets') }}"><a class="nav-link"
-                            href="{{ route('feature.tickets') }}">Tickets</a></li>
+                    <li class="{{ Request::is('feature/setting-detail') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('feature.setting-detail') ? 'active' : '' }}">Setting Detail</a></li>
+                    <li class="{{ Request::is('feature/tickets') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('feature.tickets') ? 'active' : '' }}">Tickets</a></li>
                 </ul>
             </li>
-            <li class="nav-item dropdown">
+            <li class="nav-item dropdown {{ $menu == 'utilities' ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fas fa-ellipsis-h"></i>
                     <span>Utilities</span></a>
                 <ul class="dropdown-menu">
-                    <li><a href="utilities-contact.html">Contact</a></li>
-                    <li><a class="nav-link" href="utilities-invoice.html">Invoice</a></li>
-                    <li><a href="utilities-subscribe.html">Subscribe</a></li>
+                    <li class="{{ Request::is('utilities/contact') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('utilities.contact') ? 'active' : '' }}">Contact</a></li>
+                    <li class="{{ Request::is('utilities/invoice') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('utilities.invoice') }}">Invoice</a></li>
+                    <li class="{{ Request::is('utilities/subscribe') ? 'active' : '' }}"><a class="nav-link"
+                            href="{{ route('utilities.subscribe') }}">Subscribe</a></li>
                 </ul>
             </li>
-            <li><a class="nav-link" href="credits.html"><i class="fas fa-pencil-ruler"></i>
-                    <span>Credits</span></a></li>
+            <li class="{{ Request::is('credits') ? 'active' : '' }}"><a class="nav-link"
+                    href="{{ route('credits') }}"><i class="fas fa-pencil-ruler"></i>
+                    <span>Credits</span></a>
+            </li>
         </ul>
 
         <div class="mt-4 mb-4 p-3 hide-sidebar-mini">

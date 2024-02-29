@@ -27,38 +27,7 @@ Route::prefix('dashboard')->group(function () {
     })->name('dashboard.general');
 });
 
-// Features
-Route::prefix('feature')->group(function () {
 
-    Route::get('activities', function () {
-        return view('pages.features.feature-activities', ['menu' => 'features']);
-    })->name('feature.activites');
-
-    Route::get('post-create', function () {
-        return view('pages.features.feature-post-create', ['menu' => 'features']);
-    })->name('feature.post-create');
-    
-    Route::get('posts', function () {
-        return view('pages.features.feature-posts', ['menu' => 'features']);
-    })->name('feature.posts');
-    
-    Route::get('profile', function () {
-        return view('pages.features.feature-profile', ['menu' => 'features']);
-    })->name('feature.profile');
-    
-    Route::get('settings', function () {
-        return view('pages.features.feature-settings', ['menu' => 'features']);
-    })->name('feature.settings');
-
-    Route::get('setting-detail', function () {
-        return view('pages.features.feature-setting-detail', ['menu' => 'features']);
-    })->name('feature.setting-detail');
-
-    Route::get('tickets', function () {
-        return view('pages.features.feature-tickets', ['menu' => 'features']);
-    })->name('feature.tickets');
-
-});
 
 // Layouts
 Route::prefix('layout')->group(function () {
@@ -376,3 +345,58 @@ Route::prefix('error')->group(function () {
     })->name('error.error-500');
     
 });
+
+// Features
+Route::prefix('feature')->group(function () {
+
+    Route::get('activities', function () {
+        return view('pages.features.feature-activities', ['menu' => 'features']);
+    })->name('feature.activites');
+
+    Route::get('post-create', function () {
+        return view('pages.features.feature-post-create', ['menu' => 'features']);
+    })->name('feature.post-create');
+    
+    Route::get('posts', function () {
+        return view('pages.features.feature-posts', ['menu' => 'features']);
+    })->name('feature.posts');
+    
+    Route::get('profile', function () {
+        return view('pages.features.feature-profile', ['menu' => 'features']);
+    })->name('feature.profile');
+    
+    Route::get('settings', function () {
+        return view('pages.features.feature-settings', ['menu' => 'features']);
+    })->name('feature.settings');
+
+    Route::get('setting-detail', function () {
+        return view('pages.features.feature-setting-detail', ['menu' => 'features']);
+    })->name('feature.setting-detail');
+
+    Route::get('tickets', function () {
+        return view('pages.features.feature-tickets', ['menu' => 'features']);
+    })->name('feature.tickets');
+
+});
+
+// Utilites
+Route::prefix('utilities')->group(function () {
+
+    Route::get('contact', function () {
+        return view('pages.utilities.contact', ['menu' => 'utilities']);
+    })->name('utilities.contact');
+
+    Route::get('invoice', function () {
+        return view('pages.utilities.invoice', ['menu' => 'utilities']);
+    })->name('utilities.invoice');
+
+    Route::get('subscribe', function () {
+        return view('pages.utilities.subscribe', ['menu' => 'utilities']);
+    })->name('utilities.subscribe');
+    
+});
+
+// Credits
+Route::get('credits', function () {
+    return view('pages.credits.credits', ['menu' => 'credits']);
+})->name('credits');
