@@ -20,7 +20,7 @@
 <p align="center">
   <a href="https://getstisla.com">Homepage</a>
   •
-  <a href="https://github.com/edikurniawan-dev/laravel-stisla#quick-start">Getting Started</a>
+  <a href="https://github.com/ookapratama/laravel-stisla-starter#quick-start">Getting Started</a>
   •
   <a href="https://demo.getstisla.com" target="_new">Demo</a>
   •
