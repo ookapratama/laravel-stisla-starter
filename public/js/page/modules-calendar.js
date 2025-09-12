@@ -1,5 +1,13 @@
 "use strict";
 
+var today = new Date();
+var dd = String(today.getDate()).padStart(2, '0');
+var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = today.getFullYear();
+
+today = mm + '-' + dd + '-' + yyyy;
+
+
 $("#myEvent").fullCalendar({
   height: 'auto',
   header: {
@@ -11,7 +19,7 @@ $("#myEvent").fullCalendar({
   events: [
     {
       title: 'Conference',
-      start: '2018-01-9',
+      start: today,
       end: '2018-01-11',
       backgroundColor: "#fff",
       borderColor: "#fff",
@@ -19,7 +27,7 @@ $("#myEvent").fullCalendar({
     },
     {
       title: "John's Birthday",
-      start: '2018-01-14',
+      start: today,
       backgroundColor: "#007bff",
       borderColor: "#007bff",
       textColor: '#fff'
@@ -33,14 +41,14 @@ $("#myEvent").fullCalendar({
     },
     {
       title: 'Starting New Project',
-      start: '2018-01-11',
+      start: today,
       backgroundColor: "#ffc107",
       borderColor: "#ffc107",
       textColor: '#fff'
     },
     {
       title: 'Social Distortion Concert',
-      start: '2018-01-24',
+      start: today,
       end: '2018-01-27',
       backgroundColor: "#000",
       borderColor: "#000",
@@ -55,7 +63,7 @@ $("#myEvent").fullCalendar({
     },
     {
       title: 'Company Trip',
-      start: '2018-01-28',
+      start: today,
       end: '2018-01-31',
       backgroundColor: "#fff",
       borderColor: "#fff",
